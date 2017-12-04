@@ -1,3 +1,17 @@
+# Hubot on Pi
+
+This is the code from a test implementation of HuBot on a Raspberry Pi 3.
+The goal was to simply control a couple of GPIO pins through HuBot.
+The functionality simply turns the pins on and off.
+The same script that starts the bot has to set the pins as output ready using the gpio command.
+
+For example:
+
+gpio -g mode 19 out
+
+These pins match the ones in the coffee script once the bot starts.
+If this is not done, the gpio command, when run from the coffee scripts in the bot, will not be able to access the pins. 
+
 # bot1
 
 bot1 is a chat bot built on the [Hubot][hubot] framework. It was
